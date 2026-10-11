@@ -27,4 +27,4 @@ The QuerySail MCP server (`querysail-gsc`) gives read-only access to the user's 
 
 ## Limits
 
-QuerySail is read-only. It cannot submit sitemaps, request indexing or change settings; tell the user to do that in Search Console. It has no Google Analytics data and no keyword search volume.
+QuerySail is read-only. It cannot submit sitemaps, request indexing or change settings; tell the user to do that in Search Console. It has no keyword search volume. Google Analytics data comes from the separate `querysail-ga4` server.
