@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="QuerySail logo" width="96" align="right">
 
-QuerySail is a hosted, read-only [MCP](https://modelcontextprotocol.io) server for Google Search Console. Connect it to ChatGPT, Claude, Codex, Cursor or VS Code, sign in, connect your Google account once, and ask about your search traffic in plain language. There is nothing to install and no API key to paste.
+QuerySail is a hosted [MCP](https://modelcontextprotocol.io) server for Google Search Console. Connect it to ChatGPT, Claude, Codex, Cursor or VS Code, sign in, connect your Google account once, and ask about your search traffic in plain language. There is nothing to install and no API key to paste.
 
 - **Endpoint:** `https://mcp.querysail.com/gsc/mcp` (Streamable HTTP, OAuth 2.1 with dynamic client registration)
 - **Website:** https://querysail.com/google-search-console

@@ -1,6 +1,6 @@
 {
   "name": "querysail",
-  "description": "QuerySail plugins: hosted, read-only Google Search Console access for Claude Code.",
+  "description": "QuerySail plugins: hosted Google Search Console access for Claude Code.",
   "owner": {
     "name": "Gidian Bateman",
     "email": "support@querysail.com"
@@ -9,7 +9,7 @@
     {
       "name": "querysail-gsc",
       "source": "./",
-      "description": "Read-only Google Search Console data in Claude Code: search performance, period comparisons, URL inspection and sitemaps.",
+      "description": "Google Search Console data in Claude Code: search performance, period comparisons, URL inspection and sitemaps.",
       "category": "productivity"
     }
   ]
