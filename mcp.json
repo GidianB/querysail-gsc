@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "querysail-gsc": { "url": "https://mcp.querysail.com/gsc/mcp" }
+  }
+}
