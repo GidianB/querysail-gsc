@@ -1,0 +1,17 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON files parse
+        run: find . -name '*.json' -not -path './.git/*' -print0 | xargs -0 -n1 jq empty
+      - name: Listed endpoints match server.json
+        run: |
+          url=$(jq -r '.remotes[0].url' server.json)
+          for f in .mcp.json README.md; do grep -qF "$url" "$f" || { echo "$f does not list $url"; exit 1; }; done
