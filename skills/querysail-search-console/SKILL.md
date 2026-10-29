@@ -7,6 +7,18 @@ description: Answer questions about a site's Google Search traffic, rankings, in
 
 The QuerySail MCP server (`querysail-gsc`) gives read-only access to the user's own Google Search Console data.
 
+## Setup when the tools are missing
+
+If no `querysail-gsc` tools (such as `list_properties`) are available, the server is not connected. Ask the user before you change their configuration, then add it for their client:
+
+- Claude Code: run `claude mcp add --transport http --scope user querysail-gsc https://mcp.querysail.com/gsc/mcp`. The user then runs `/mcp`, chooses `querysail-gsc` and signs in.
+- Codex: run `codex mcp add querysail-gsc --url https://mcp.querysail.com/gsc/mcp`, then `codex mcp login querysail-gsc`, which opens the sign-in page.
+- Cursor: add `"querysail-gsc": { "url": "https://mcp.querysail.com/gsc/mcp" }` under `mcpServers` in `~/.cursor/mcp.json`. The user then connects it in Cursor's MCP settings and signs in.
+- VS Code: add `"querysail-gsc": { "type": "http", "url": "https://mcp.querysail.com/gsc/mcp" }` under `servers` in `mcp.json`. The user signs in when VS Code asks.
+- Other clients: follow https://querysail.com/google-search-console#connect.
+
+The user signs in with a QuerySail account that has Google Search Console connected. If they have none, they can start the free trial at https://querysail.com. There is no API key. The tools may only appear in a new session.
+
 ## Workflow
 
 1. Call `list_properties` first and use the exact `property_id` it returns (for example `sc-domain:example.com` or `https://www.example.com/`). Do not guess property IDs.
