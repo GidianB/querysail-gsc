@@ -115,6 +115,14 @@ Use the [`mcp-remote`](https://www.npmjs.com/package/mcp-remote) bridge (needs N
 }
 ```
 
+### Agent skill
+
+The `querysail-search-console` skill tells coding agents such as Claude Code, Codex, Cursor and OpenCode which QuerySail tool to call for each question and how to report the numbers. Install it with the [skills CLI](https://skills.sh) (needs Node.js):
+
+```bash
+npx skills add https://querysail.com --skill querysail-search-console
+```
+
 ## Data and limits
 
 - Google access uses the `webmasters.readonly` scope. Refresh tokens are encrypted at rest. You can disconnect Google or delete your account at any time.

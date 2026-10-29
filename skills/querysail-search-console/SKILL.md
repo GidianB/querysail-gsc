@@ -1,5 +1,5 @@
 ---
-name: search-console-analysis
+name: querysail-search-console
 description: Answer questions about a site's Google Search traffic, rankings, indexing and sitemaps with the QuerySail Google Search Console tools. Use when the user asks about clicks, impressions, CTR, average position, top queries or pages, traffic drops, whether a page is indexed, canonicals, or sitemap errors.
 ---
 
